@@ -1,0 +1,23 @@
+.camvid__cameras-container {
+    color: var(--color-text);
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px;
+    border: 2px solid rgba(255,255,255,0.25);
+    border-radius: 5px;
+}
+
+.camvid__cameras-container_title p {
+    text-align: center;
+}
+
+.camvid__cameras-container_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camvid__cameras-container_image img {
+    height: auto;
+    max-width: 100%;
+    
+}

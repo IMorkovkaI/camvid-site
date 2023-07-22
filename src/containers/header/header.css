@@ -1,0 +1,153 @@
+.camvid__header {
+    display: flex;
+    flex-direction: row;
+    background-image: url("../../assets/main-image.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.camvid__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-right: 5rem;
+}
+
+.camvid__header-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.camvid__header-content p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-text);
+
+    margin-top: 1.5rem;
+}
+
+.camvid__header-content__input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: grid;
+}
+
+.camvid__header-content__input input {
+    width: 100%;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: var(--color-footer);
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+    color: #fff;
+    margin-bottom: 5px;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.camvid__header-content__input button {
+    flex: 0.6;
+    width: 50%;
+    position: relative;
+    min-height: 50px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    background: #FF4820;
+    border: 2px solid #FF4820;
+    padding: 0 1rem;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+
+    border-radius: 5px;
+}
+
+.camvid__header-content__input textarea {
+    height: 150px;
+    background: var(--color-footer);
+    font-family: var(--font-family);
+    letter-spacing: 2px;
+    border: 2px solid var(--color-footer);
+    resize: vertical;
+    font-size: 20px;
+}
+
+.camvid__header-content__input textarea::placeholder {
+    padding-left: 3%;
+    padding-top: 5px;
+}
+
+.camvid__header-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.camvid__header-image img {
+    width: 70%;
+    height: 30%;
+
+}
+
+@media screen and (max-width: 1050px) {
+    .camvid__header {
+        flex-direction: column;
+    }
+
+    .camvid__header-content {
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .camvid__header-content h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .camvid__header-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }    
+
+    .camvid__header-content__input input,
+    .camvid__header-content__input button {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .camvid__header-content h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .camvid__header-content p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .camvid__header-content__input input,
+    .camvid__header-content__input button {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
